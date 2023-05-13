@@ -1,5 +1,8 @@
 ﻿namespace BooksApp.Infrastructure.Entities
 {
+    /*
+     * POCO: Plain Old C# Object
+     */
     public class Book
     {
         public int BookId { get; set; }
@@ -8,7 +11,7 @@
         public DateTime? PublishedOn { get; set; }
         public string? Publisher { get; set; }
         public decimal Price { get; set; }
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
         public bool SoftDeleted { get; set; }
 
 
