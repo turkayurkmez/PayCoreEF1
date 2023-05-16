@@ -20,7 +20,10 @@
         public ICollection<Tag> Tags { get; set; }
         public ICollection<BookAuthor> AuthorsLink { get; set; }
 
-
+        public Book()
+        {
+            Reviews = new HashSet<Review>();
+        }
 
 
 

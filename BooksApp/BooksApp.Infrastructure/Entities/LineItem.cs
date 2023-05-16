@@ -16,6 +16,9 @@ namespace BooksApp.Infrastructure.Entities
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
+            //Specification Pattern:
+            // Ayrtıntı ve örnek : https://en.wikipedia.org/wiki/Specification_pattern
+            //
 
             if (ChoosenBook.Price <= 0)
             {

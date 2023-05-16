@@ -1,0 +1,7 @@
+﻿EF (ORM) kullanan business logic'in 5 kılavuz çizgisi
+
+1. İş Mantığı, db yapısının nasıl tanımlanacağına ilk olarak karar verir. Çünkü Eric Evans'a göre; çözmeye çalıştığımız sorun; uygulamamızın merkezinde yer almaktadır. 
+2. İş mantığı hiçbir dikkat dağıtıcıya sahip olmamalıdır. Sadece Entity'ler ile birlikte çalışır. 
+3. İş mantığı, bellek üzerindeki data ile çalışıyormuş gibi gözükmeli. 
+4. Veritabanı erişim kodları ayrı bir projede yer almalı.
+5. İş mantığı doğrudan SaveChanges metodunu çağırmamalı. 
