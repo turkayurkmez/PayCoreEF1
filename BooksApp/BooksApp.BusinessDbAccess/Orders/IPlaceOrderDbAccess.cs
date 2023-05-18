@@ -33,6 +33,14 @@ namespace BooksApp.BusinessDbAccess.Orders
             return _context.Books.Where(book => bookIds.Contains(book.BookId))
                                  .Include(book => book.Promotion)
                                  .ToDictionary(key => key.BookId);
+
+            /*
+             * var query = from person in context.Persons
+               where persons.Any(p => p.Name == person.Name && p.Age == person.Age)
+               select person;
+
+               
+             */
         }
     }
 }

@@ -14,13 +14,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		guideLine.txt = guideLine.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.BusinessLogic", "BooksApp.BusinessLogic\BooksApp.BusinessLogic.csproj", "{04EF0C6D-9A15-48D4-A61F-DF627112CC6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksApp.BusinessLogic", "BooksApp.BusinessLogic\BooksApp.BusinessLogic.csproj", "{04EF0C6D-9A15-48D4-A61F-DF627112CC6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.BusinessDbAccess", "BooksApp.BusinessDbAccess\BooksApp.BusinessDbAccess.csproj", "{6FFAFDD6-4202-4A07-B0E1-BF9491109B45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksApp.BusinessDbAccess", "BooksApp.BusinessDbAccess\BooksApp.BusinessDbAccess.csproj", "{6FFAFDD6-4202-4A07-B0E1-BF9491109B45}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business Logic", "{FFD2E754-7A19-41B9-B0CC-3BFC8690CD55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.BusinessLogic.ServiceLayer", "BooksApp.BusinessLogic.ServiceLayer\BooksApp.BusinessLogic.ServiceLayer.csproj", "{B1D62705-C1CB-4EC2-B70C-1234DC32A3EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksApp.BusinessLogic.ServiceLayer", "BooksApp.BusinessLogic.ServiceLayer\BooksApp.BusinessLogic.ServiceLayer.csproj", "{B1D62705-C1CB-4EC2-B70C-1234DC32A3EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domains", "Domains", "{1E1BEFDD-5C7E-4E6D-8F3F-BF5ACB572892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.Domains.Books", "BooksApp.Domains.Books\BooksApp.Domains.Books.csproj", "{756758C5-C437-464F-B86E-90D7D0E3752B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +56,10 @@ Global
 		{B1D62705-C1CB-4EC2-B70C-1234DC32A3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1D62705-C1CB-4EC2-B70C-1234DC32A3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1D62705-C1CB-4EC2-B70C-1234DC32A3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{756758C5-C437-464F-B86E-90D7D0E3752B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756758C5-C437-464F-B86E-90D7D0E3752B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756758C5-C437-464F-B86E-90D7D0E3752B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756758C5-C437-464F-B86E-90D7D0E3752B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 		{04EF0C6D-9A15-48D4-A61F-DF627112CC6B} = {FFD2E754-7A19-41B9-B0CC-3BFC8690CD55}
 		{6FFAFDD6-4202-4A07-B0E1-BF9491109B45} = {FFD2E754-7A19-41B9-B0CC-3BFC8690CD55}
 		{B1D62705-C1CB-4EC2-B70C-1234DC32A3EC} = {FFD2E754-7A19-41B9-B0CC-3BFC8690CD55}
+		{756758C5-C437-464F-B86E-90D7D0E3752B} = {1E1BEFDD-5C7E-4E6D-8F3F-BF5ACB572892}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6AD424D3-5720-4B2A-B3E8-1F0B83B15CD4}

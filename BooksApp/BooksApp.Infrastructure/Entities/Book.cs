@@ -1,4 +1,6 @@
-﻿namespace BooksApp.Infrastructure.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BooksApp.Infrastructure.Entities
 {
     /*
      * POCO: Plain Old C# Object
@@ -6,6 +8,8 @@
     public class Book
     {
         public int BookId { get; set; }
+        [Required]
+        [MaxLength(255)]
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime? PublishedOn { get; set; }

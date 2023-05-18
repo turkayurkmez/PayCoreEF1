@@ -1,4 +1,5 @@
-﻿using BooksApp.Infrastructure.Entities;
+﻿using BooksApp.Infrastructure.Data.Configurations;
+using BooksApp.Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BooksApp.Infrastructure.Data
@@ -17,6 +18,9 @@ namespace BooksApp.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.ApplyConfiguration(new BookConfiguration());
+
             /* Fluent API */
             modelBuilder.Entity<BookAuthor>()
                         .HasKey(ba => new { ba.AuthorId, ba.BookId });
@@ -36,6 +40,11 @@ namespace BooksApp.Infrastructure.Data
                         .HasOne(l => l.ChoosenBook)
                         .WithMany()
                         .OnDelete(DeleteBehavior.Restrict);
+
+            //Fluent API: db'de olması gereken tüm şematik kurallar ve ilişkiler bir arada görülebilir.
+
+            modelBuilder.Entity<Book>()
+                        .Property(b => b.Title).IsRequired().HasMaxLength(300);
 
 
             var julesVerne = new Author
@@ -87,7 +96,14 @@ namespace BooksApp.Infrastructure.Data
             };
 
             modelBuilder.Entity<Book>().HasData(books);
+
+            //if (Database.IsSqlServer())
+            //{
+
+            //}
         }
+
+
 
     }
 }

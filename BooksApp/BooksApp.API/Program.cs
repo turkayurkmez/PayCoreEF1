@@ -1,4 +1,5 @@
 using BooksApp.Application.Services;
+using BooksApp.BusinessLogic.ServiceLayer.BookService;
 using BooksApp.BusinessLogic.ServiceLayer.OrderServices;
 using BooksApp.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,8 @@ builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration.GetConnectionString("db");
 builder.Services.AddDbContext<BooksAppDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<PlaceOrderService>();
+builder.Services.AddScoped<ChangePriceOfferService>();
+builder.Services.AddScoped<AddReviewService>();
 
 builder.Services.AddScoped<QueryingService>();
 var app = builder.Build();
